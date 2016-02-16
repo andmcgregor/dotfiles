@@ -84,13 +84,25 @@ super + Return
 super + space
 	rofi -show run
 
-# media keys
+# screen brightness
 
-F5
+XF86MonBrightnessUp
+	xbacklight -inc 1
+
+XF86MonBrightnessDown
 	xbacklight -dec 1
 
-F6
-	xbacklight -inc 1
+# media keys
+
+
+XF86AudioMute
+	amixer -D pulse sset Master toggle
+
+XF86AudioLowerVolume
+	amixer -D pulse sset Master 5%-
+
+XF86AudioRaiseVolume
+	amixer -D pulse sset Master 5%+
 
 # make sxhkd reload its configuration files:
 super + Escape
