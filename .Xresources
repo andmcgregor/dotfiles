@@ -1,0 +1,8 @@
+URxvt.perl-ext-common: default,clipboard
+
+URxvt.scrollBar: false
+
+URxvt.depth: 32
+URxvt.background: rgba:1111/1111/1111/dddd
+
+URxvt.foreground: white
